@@ -1,9 +1,6 @@
-import math
-import os
-
 import requests
 
-
-name = input('Your name?')
-print("Hello, ", name)
+r = requests.get("https://facebook.com")
+print(r.status_code)
+print(r.ok)
 
